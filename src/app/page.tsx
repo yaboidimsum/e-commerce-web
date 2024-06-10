@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#F9F6EE" }}>
+    <div >
       <section>
         <MaxWidthWrapper className="lg: grid  pb-24 pt-10 sm:pb-32 lg:grid-cols-3 lg:gap-x-0 lg:pb-52 lg:pt-24 xl:gap-x-8 xl:pt-32">
           <div className="col-span-2  px-6 lg:px-0 lg:pt-4">
