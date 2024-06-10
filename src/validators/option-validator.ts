@@ -18,28 +18,28 @@ export const MODELS = {
   name: 'models',
   options: [
     {
-      label: 'iPhone X',
-      value: 'iphonex',
+      label: 'XS',
+      value: 'xs',
     },
     {
-      label: 'iPhone 11',
-      value: 'iphone11',
+      label: 'S',
+      value: 's',
     },
     {
-      label: 'iPhone 12',
-      value: 'iphone12',
+      label: 'M',
+      value: 'm',
     },
     {
-      label: 'iPhone 13',
-      value: 'iphone13',
+      label: 'L',
+      value: 'l',
     },
     {
-      label: 'iPhone 14',
-      value: 'iphone14',
+      label: 'XL',
+      value: 'xl',
     },
     {
-      label: 'iPhone 15',
-      value: 'iphone15',
+      label: 'XXL',
+      value: 'xxl',
     },
   ],
 } as const
@@ -48,16 +48,16 @@ export const MATERIALS = {
   name: 'material',
   options: [
     {
-      label: 'Silicone',
-      value: 'silicone',
+      label: 'Classic Cotton',
+      value: 'classiccotton',
       description: undefined,
-      price: PRODUCT_PRICES.material.silicone,
+      price: PRODUCT_PRICES.material.classiccotton,
     },
     {
-      label: 'Soft Polycarbonate',
-      value: 'polycarbonate',
-      description: 'Scratch-resistant coating',
-      price: PRODUCT_PRICES.material.polycarbonate,
+      label: 'Polyester Blend',
+      value: 'polyesterblend',
+      description: 'Perfect balance between comfort and practicality',
+      price: PRODUCT_PRICES.material.polyesterblend,
     },
   ],
 } as const
@@ -66,16 +66,16 @@ export const FINISHES = {
   name: 'finish',
   options: [
     {
-      label: 'Smooth Finish',
-      value: 'smooth',
+      label: 'Standard Quality',
+      value: 'standardquality',
       description: undefined,
-      price: PRODUCT_PRICES.finish.smooth,
+      price: PRODUCT_PRICES.finish.standardquality,
     },
     {
-      label: 'Textured Finish',
-      value: 'textured',
-      description: 'Soft grippy texture',
-      price: PRODUCT_PRICES.finish.textured,
+      label: 'Vinyl Printing',
+      value: 'vinylprinting',
+      description: 'High-quality design from the galaxy far far away!',
+      price: PRODUCT_PRICES.finish.vinylprinting,
     },
   ],
 } as const

@@ -83,7 +83,7 @@ const DesignConfigurator = ({
     y: 205,
   })
 
-  const phoneCaseRef = useRef<HTMLDivElement>(null)
+  const teesCaseRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
   const { startUpload } = useUploadThing('imageUploader')
@@ -95,7 +95,7 @@ const DesignConfigurator = ({
         top: caseTop,
         width,
         height,
-      } = phoneCaseRef.current!.getBoundingClientRect()
+      } = teesCaseRef.current!.getBoundingClientRect()
 
       const { left: containerLeft, top: containerTop } =
         containerRef.current!.getBoundingClientRect()
@@ -156,17 +156,11 @@ const DesignConfigurator = ({
       <div
         ref={containerRef}
         className='relative h-[37.5rem] overflow-hidden col-span-2 w-full max-w-4xl flex items-center justify-center rounded-lg border-2 border-dashed border-gray-300 p-12 text-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'>
-        <div className='relative w-60 bg-opacity-50 pointer-events-none aspect-[896/1831]'>
+        <div className='relative w-60 bg-opacity-50 pointer-events-none aspect-[400/400]'>
           <AspectRatio
-            ref={phoneCaseRef}
-            ratio={896 / 1831}
-            className='pointer-events-none relative z-50 aspect-[896/1831] w-full'>
-            <NextImage
-              fill
-              alt='phone image'
-              src='/josh/phone-template.png'
-              className='pointer-events-none z-50 select-none'
-            />
+            ref={teesCaseRef}
+            ratio={400 / 400}
+            className='pointer-events-none relative z-50 aspect-[400/400] w-full'>
           </AspectRatio>
           <div className='absolute z-40 inset-0 left-[3px] top-px right-[3px] bottom-px rounded-[32px] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)]' />
           <div
@@ -224,7 +218,7 @@ const DesignConfigurator = ({
 
           <div className='px-8 pb-12 pt-8'>
             <h2 className='tracking-tight font-bold text-3xl'>
-              Customize your case
+              Customize your tees
             </h2>
 
             <div className='w-full h-px bg-zinc-200 my-6' />

@@ -4,9 +4,8 @@ import { HTMLAttributes, useEffect, useRef, useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Phone from "./Phone";
 
-const PHONES = [
+const TEES = [
   "/custom/tees-review/tees-1.png",
   "/custom/tees-review/tees-2.png",
   "/custom/tees-review/tees-3.png",
@@ -114,7 +113,7 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
 function ReviewGrid() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.4 });
-  const columns = splitArray(PHONES, 3);
+  const columns = splitArray(TEES, 3);
   const column1 = columns[0];
   const column2 = columns[1];
   const column3 = splitArray(columns[2], 2);

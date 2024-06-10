@@ -19,26 +19,26 @@ enum OrderStatus {
   awaiting_shipment
 }
 
-enum PhoneModel {
-  iphonex
-  iphone11
-  iphone12
-  iphone13
-  iphone14
-  iphone15
+enum TeesModel {
+  xs
+  s
+  m
+  l
+  xl
+  xxl
 }
 
-enum CaseMaterial {
-  silicone
-  polycarbonate
+enum TeesMaterial {
+  classiccotton
+  polyesterblend
 }
 
-enum CaseFinish {
-  smooth
-  textured
+enum TeesFinish {
+  standardquality
+  vinylprinting
 }
 
-enum CaseColor {
+enum TeesColor {
   black
   blue
   rose
@@ -49,10 +49,10 @@ model Configuration {
   width           Int
   height          Int
   imageUrl        String
-  color           CaseColor?
-  model           PhoneModel?
-  material        CaseMaterial?
-  finish          CaseFinish?
+  color           TeesColor?
+  model           TeesModel?
+  material        TeesMaterial?
+  finish          TeesFinish?
   croppedImageUrl String?
   Order           Order[]
 }

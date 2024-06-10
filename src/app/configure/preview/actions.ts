@@ -29,9 +29,9 @@ export const createCheckoutSession = async ({
   const { finish, material } = configuration
 
   let price = BASE_PRICE
-  if (finish === 'textured') price += PRODUCT_PRICES.finish.textured
-  if (material === 'polycarbonate')
-    price += PRODUCT_PRICES.material.polycarbonate
+  if (finish === 'vinylprinting') price += PRODUCT_PRICES.finish.vinylprinting
+  if (material === 'polyesterblend')
+    price += PRODUCT_PRICES.material.polyesterblend
 
   let order: Order | undefined = undefined
 
@@ -57,7 +57,7 @@ export const createCheckoutSession = async ({
   }
 
   const product = await stripe.products.create({
-    name: 'Custom iPhone Case',
+    name: 'Custom Tees Print',
     images: [configuration.imageUrl],
     default_price_data: {
       currency: 'USD',
