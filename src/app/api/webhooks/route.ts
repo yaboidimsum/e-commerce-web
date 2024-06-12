@@ -72,7 +72,7 @@ export async function POST(req: Request) {
       });
 
       await resend.emails.send({
-        from: "dprihadisetiawan@gmail.com",
+        from: "onboarding@resend.dev",
         //to: "dprihadisetiawan@gmail.com",
         to: [event.data.object.customer_details.email],
         subject: "Thanks for your order!",
